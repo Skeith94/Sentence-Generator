@@ -1,4 +1,4 @@
 # subject.yml
 ---
 spring.config.activate.on-profile: subject
-asw.sentence.wordservice.words: Spring Cloud Config,Spring Cloud Config
+asw.sentence.wordservice.words:  Olga,Vito,Michelaangelo,Adelchi
