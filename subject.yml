@@ -1,4 +1,4 @@
 # subject.yml
 ---
 spring.config.activate.on-profile: subject
-asw.sentence.wordservice.words:  Olga,Vito,Michelaangelo,Adelchi
+asw.sentence.wordservice.words:  Olga,Vito,Michelangelo,Adelchi
