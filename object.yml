@@ -1,4 +1,4 @@
 # object.yml
 ---
 spring.config.activate.on-profile: object
-asw.sentence.wordservice.words: from remote files,from remote files
+asw.sentence.wordservice.words:  cats,pizza,spring,dogs,java
