@@ -1,4 +1,4 @@
 # verb.yml
 ---
 spring.config.activate.on-profile: verb
-asw.sentence.wordservice.words: works,works
+asw.sentence.wordservice.words: likes,loves,dreams,does not like
