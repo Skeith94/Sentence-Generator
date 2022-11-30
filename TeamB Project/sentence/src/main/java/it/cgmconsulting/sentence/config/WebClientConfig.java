@@ -8,11 +8,6 @@ import org.springframework.web.reactive.function.client.WebClient;
 @Configuration
 public class WebClientConfig {
 
-   /* @Bean
-    public WebClient webClient(){
-        return WebClient.builder().build();
-    }*/
-
     @Bean("loadBalancedWebClientBuilder")
     @LoadBalanced
     public WebClient.Builder loadBalancedWebClientBuilder() {
@@ -24,9 +19,4 @@ public class WebClientConfig {
         return loadBalancedWebClientBuilder.build();
     }
 
-    /*@Bean
-    public WebClient AccountsService(WebClient.Builder loadBalancedWebClientBuilder) {
-        return loadBalancedWebClientBuilder
-                .build();
-    }*/
 }
