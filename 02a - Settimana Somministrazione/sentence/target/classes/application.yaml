@@ -1,0 +1,49 @@
+server:
+  port: 0
+  servlet:
+    context-path: /sentence
+
+spring:
+  application:
+    name: sentence
+
+
+eureka:
+  client:
+    service-url:
+      default-zone: http:localhost:8761/eureka
+
+  instance:
+    hostname: host.docker.internal
+
+resilience4j.circuitbreaker:
+  instances:
+    subject:
+      failureRateThreshold: 50
+      minimumNumberOfCalls: 10
+      slidingWindowType: TIME_BASED
+      slidingWindowSize: 10
+      waitDurationInOpenState: 50s
+      permittedNumberOfCallsInHalfOpenState: 3
+    object:
+      failureRateThreshold: 50
+      minimumNumberOfCalls: 10
+      slidingWindowType: TIME_BASED
+      slidingWindowSize: 10
+      waitDurationInOpenState: 50s
+      permittedNumberOfCallsInHalfOpenState: 3
+    verb:
+      failureRateThreshold: 50
+      minimumNumberOfCalls: 10
+      slidingWindowType: TIME_BASED
+      slidingWindowSize: 10
+      waitDurationInOpenState: 50s
+      permittedNumberOfCallsInHalfOpenState: 3
+
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          client:
+            loadbalancer: TRACE
