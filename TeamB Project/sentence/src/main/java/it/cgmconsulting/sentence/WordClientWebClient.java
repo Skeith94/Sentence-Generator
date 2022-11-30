@@ -17,17 +17,13 @@ import java.time.Duration;
 @Service
 public class WordClientWebClient {
 
-    @Autowired DiscoveryClient discoveryClient;
-    @Autowired LoadBalancerClient loadBalancer;
-
     @Qualifier("loadBalancedWebClient")
     @Autowired WebClient webClient;
 
     @Autowired ReactiveCircuitBreakerFactory reactiveCircuitBreakerFactory;
 
     public Mono<String> getWord(String service) {
-        //URI uri = getWordUri(service);
-
+        
         //Accesso mediante WebClient load balanced
         String uri = "http://" + service;
         return webClientGet(uri).timeout(Duration.ofMillis(10_000))
@@ -35,25 +31,6 @@ public class WordClientWebClient {
                     ReactiveCircuitBreaker rcb = reactiveCircuitBreakerFactory.create(service);
                     return rcb.run(it, throwable -> Mono.just("[" + service + " offline]"));
                 });
-    }
-
-    private URI getWordUri(String service) {
-        URI uri = null;
-
-        /*
-        //Accesso mediante Discovery service
-        List<ServiceInstance> list = discoveryClient.getInstances(service);
-        if (list != null && list.size()>0) {
-            //scegli il primo, oppure un elemento casuale della lista
-            uri = list.get(0).getUri();
-        }*/
-
-        //Accesso mediante LoadBalancer service
-        ServiceInstance instance = loadBalancer.choose(service);
-        if (instance != null) {
-            uri = instance.getUri();
-        }
-        return uri;
     }
 
     private Mono<String> webClientGet(String uri) {
