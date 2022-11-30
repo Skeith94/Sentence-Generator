@@ -1,11 +1,3 @@
-Team A: Danilo, Giuseppe, Davide
-Creare un'architettura a microservizi che utilizzi OpenFeign anziché RestTemplate per far comunicare i microservizi tra di loro, seguendo la traccia del pdf in allegato.
-Redigere una schematica documentazione finale in cui venga spiegato come implementare OpenFeign.
-DOCUMENTAZIONE UFFICIALE: 
-https://spring.io/projects/spring-cloud-openfeign#overview
-
-//------------------------------------------------------------------------------------------------------------
-
 Team B: Michelangelo, Olga, Vito
 Creare un'architettura a microservizi che utilizzi WebClient anziché RestTemplate per far comunicare i microservizi tra di loro, seguendo la traccia del pdf in allegato.
 Redigere una schematica documentazione finale in cui venga spiegato come implementare WebClient.
