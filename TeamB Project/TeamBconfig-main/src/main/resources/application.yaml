@@ -9,7 +9,7 @@ spring:
       name: configserver
       server:
         git:
-          uri:  https://github.com/Skeith94/TeamBconfig
+          uri:  https://github.com/Skeith94/Sentence-Generator
           username: ${GIT-USERNAME}
           password: ${GIT-PASSWORD}
           clone-on-start: true
