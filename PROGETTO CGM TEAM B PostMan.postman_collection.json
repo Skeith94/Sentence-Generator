@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "444b1db5-6c4b-463c-97f1-3bb8af7f0bc7",
+		"name": "PROGETTO CGM TEAM B PostMan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21885750"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJHdVIxRUxwbUxoQ0luY3pTZWQ3d3dCb3ZiSjNRMkZqcUFaNlYyZTV5VFljIn0.eyJleHAiOjE2Njk5MzU0NjgsImlhdCI6MTY2OTkzNTE2OCwianRpIjoiYzQ5NzEzZDgtN2RiMy00ZmYxLTg5MmYtZGI0ZjIwMzA4YjAyIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo3MDcwL3JlYWxtcy9HYXRld2F5IiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjgxNWFkMzg4LWMzMzgtNDNkYS04MDM4LTBjOTk1NTllZTM2YSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImdhdGV3YXkiLCJzZXNzaW9uX3N0YXRlIjoiMDAwODNjOWYtMjkxMC00YmQwLWJiODUtODFmOTg4YzZiNjM3IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLWdhdGV3YXkiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiMDAwODNjOWYtMjkxMC00YmQwLWJiODUtODFmOTg4YzZiNjM3IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJwcm92YWZpbmFsMTExMTExMTEifQ.ekCZVVJcWsj02O3Y9DBBNfl_pPTTy3XIr5knZ7LOUzewgWZ-SRAPlNuBd_nATX5CrkSTZLt2V_ceflZL6W6xuOVj_DFFwx7ZaQGDx9U2ma9uWkg_CLTJ8anc40p4eAC1FShWyyKc17qVBPb6Nm4ZuSi6DCSgqDqAPVaDrrsG6pE8j57-Lp42Y1eoquC6JD4sUW6fT81oklubkaXC0IhzKZ8U5zzN0TrAEcnHXHUsF1iCy6IkOl-SL4MNFd8xK3M0tB6GDrg1ouSQWErlDkSWUX7Mnoc42POVUXcpnefe07hH-O1L4FVRe9C6PjsUysAsCtSZgoGlZAdlv1lUVVYpbw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/getGenSentence?dateStartRequest=2022/01/01&dateEndRequest=2022/12/01",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJHdVIxRUxwbUxoQ0luY3pTZWQ3d3dCb3ZiSjNRMkZqcUFaNlYyZTV5VFljIn0.eyJleHAiOjE2Njk5MzU0NjgsImlhdCI6MTY2OTkzNTE2OCwianRpIjoiYzQ5NzEzZDgtN2RiMy00ZmYxLTg5MmYtZGI0ZjIwMzA4YjAyIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo3MDcwL3JlYWxtcy9HYXRld2F5IiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjgxNWFkMzg4LWMzMzgtNDNkYS04MDM4LTBjOTk1NTllZTM2YSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImdhdGV3YXkiLCJzZXNzaW9uX3N0YXRlIjoiMDAwODNjOWYtMjkxMC00YmQwLWJiODUtODFmOTg4YzZiNjM3IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLWdhdGV3YXkiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiMDAwODNjOWYtMjkxMC00YmQwLWJiODUtODFmOTg4YzZiNjM3IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJwcm92YWZpbmFsMTExMTExMTEifQ.ekCZVVJcWsj02O3Y9DBBNfl_pPTTy3XIr5knZ7LOUzewgWZ-SRAPlNuBd_nATX5CrkSTZLt2V_ceflZL6W6xuOVj_DFFwx7ZaQGDx9U2ma9uWkg_CLTJ8anc40p4eAC1FShWyyKc17qVBPb6Nm4ZuSi6DCSgqDqAPVaDrrsG6pE8j57-Lp42Y1eoquC6JD4sUW6fT81oklubkaXC0IhzKZ8U5zzN0TrAEcnHXHUsF1iCy6IkOl-SL4MNFd8xK3M0tB6GDrg1ouSQWErlDkSWUX7Mnoc42POVUXcpnefe07hH-O1L4FVRe9C6PjsUysAsCtSZgoGlZAdlv1lUVVYpbw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getGenSentence?dateStartRequest=2022/01/01&dateEndRequest=2022/12/01",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getGenSentence"
+					],
+					"query": [
+						{
+							"key": "dateStartRequest",
+							"value": "2022/01/01"
+						},
+						{
+							"key": "dateEndRequest",
+							"value": "2022/12/01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7070/realms/Gateway/protocol/openid-connect/token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "provafinal11111111",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "prova",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "gateway",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:7070/realms/Gateway/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"realms",
+						"Gateway",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7070/realms/master/protocol/openid-connect/token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "admin-cli",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:7070/realms/master/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"realms",
+						"master",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"VITO\",\r\n    \"password\":\"prova\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Vito",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "prova",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "gateway",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
